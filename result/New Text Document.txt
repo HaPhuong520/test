@@ -1,3 +1,12 @@
 Kết quả:
 
-- Sử dụng state management Getx
+- Sử dụng state management: GetX
+- Xây dựng giao diện cho mobile
+- Chèn thông tin ngày giờ chụp vào ảnh
+
+Phần đang thực hiện:
+
+1. Chèn thông tin địa điểm vào ảnh
+- thông tin "image GPS" không trả về tọa độ lat long???
+
+2. Xây dựng giao diện cho Ipad
