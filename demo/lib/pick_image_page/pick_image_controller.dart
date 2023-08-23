@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 
 class PickImageController extends GetxController {
   RxList<ImageModel>? listImageModel = RxList();
+  ImageModel? selectedImage;
   @override
   void onInit() {
     super.onInit();
@@ -23,5 +24,10 @@ class PickImageController extends GetxController {
       // final String imgLocation = await photo.getLocation();
       listImageModel?.insert(0, ImageModel(xFile: photo, time: imgTime));
     }
+  }
+
+  onOpenImage(int id) {
+    selectedImage = listImageModel?[id];
+    update();
   }
 }
